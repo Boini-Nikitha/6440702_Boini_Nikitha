@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Event Functions</title>
+ </head>
+ <body>
+    <script>
+        const events = [
+            { name: "Music Night", category: "music" },
+            { name: "Book Fair", category: "literature" }
+        ];
+        function addEvent(event) {
+            events.push(event);
+        }
+        function registerUser(eventName) {
+            console.log(`User registered for ${eventName}`);
+        }
+        function filterEventsByCategory(category) {
+            return events.filter(event => event.category === category);
+        }
+        function createCategoryTracker(category) {
+            let count = 0;
+            return function() {
+                count++;
+                console.log(`${count} registrations for ${category}`);
+            };
+        }
+        const musicTracker = createCategoryTracker("music");
+        musicTracker();
+        musicTracker();
+        function searchEvents(events, callback) {
+            return events.filter(callback);
+        }
+        const result = searchEvents(events, event => event.name.includes("Music"));
+        console.log(result);
+    </script>
+ </body>
+ </html>

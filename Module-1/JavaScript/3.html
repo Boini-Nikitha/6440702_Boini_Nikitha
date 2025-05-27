@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Event List</title>
+ </head>
+ <body>
+    <script>
+        const events = [
+            { name: "Yoga Class", date: "2025-07-01", seats: 10 },
+            { name: "Past Event", date: "2023-05-01", seats: 5 },
+            { name: "Art Workshop", date: "2025-07-15", seats: 0 }
+        ];
+        const today = new Date("2025-06-01");
+        events.forEach(event => {
+            const eventDate = new Date(event.date);
+            if (eventDate > today && event.seats > 0) {
+                console.log(`Upcoming Event: ${event.name}`);
+                try {
+                    // simulate registration
+                    if (event.seats <= 0) throw "No seats available";
+                    event.seats--;
+                    console.log("Registered successfully.");
+                } catch (error) {
+                    console.log("Registration Error:", error);
+            }
+                }
+        });
+    </script>
+ </body>
+ </html>

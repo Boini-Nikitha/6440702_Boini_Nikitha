@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <title>DOM Events</title>
+ </head>
+ <body>
+    <div id="eventContainer"></div>
+    <script>
+        const events = [
+            { name: "Yoga", seats: 5 },
+            { name: "Dance", seats: 3 }
+        ];
+        const container = document.querySelector("#eventContainer");
+        events.forEach(event => {
+            const card = document.createElement("div");
+            card.textContent = `${event.name} - Seats: ${event.seats}`;
+            container.appendChild(card);
+        });
+        function updateUI(eventName) {
+            const newCard = document.createElement("p");
+            newCard.textContent = `${eventName} - Registered`;
+            container.appendChild(newCard);
+        }
+        updateUI("Yoga");
+    </script>
+ </body>
+</html>

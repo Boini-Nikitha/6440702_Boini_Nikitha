@@ -1,0 +1,36 @@
+/* Link states */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+
+/* Navigation list styling */
+ul.nav {
+  list-style-type: none;          /* Remove bullets */
+  list-style-position: inside;    /* Bullet inside (if used) */
+  padding-left: 0;
+  margin: 20px auto;
+  width: 200px;
+}
+
+/* List item spacing */
+ul.nav li {
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #f0f0f0;
+  text-align: center;
+  border-radius: 5px;
+}

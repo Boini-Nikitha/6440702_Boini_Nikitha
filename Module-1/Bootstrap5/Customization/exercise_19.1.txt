@@ -1,0 +1,3 @@
+Use `npm install bootstrap` to install Bootstrap with Sass.
+Create a custom.scss file and import Bootstrap source files.
+Configure your build tool (like Webpack or Dart Sass) to compile it.

@@ -1,0 +1,47 @@
+
+/* =============================== */
+/* Universal selector             */
+/* =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =============================== */
+/* Element selector for all <h2>  */
+/* =============================== */
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* =============================== */
+/* ID selector for #mainHeader    */
+/* =============================== */
+#mainHeader {
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* =============================== */
+/* Class selector for .eventCard  */
+/* =============================== */
+.eventCard {
+  background-color: #ecf0f1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  font-family: Verdana, sans-serif;
+}
+
+/* =============================== */
+/* Grouping selector              */
+/* =============================== */
+h3, p {
+  margin-bottom: 10px;
+  color: #333;
+}

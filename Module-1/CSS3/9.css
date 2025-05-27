@@ -1,0 +1,8 @@
+/* Multi-column layout for news articles */
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 20px;
+  background-color: #fffef0;
+}

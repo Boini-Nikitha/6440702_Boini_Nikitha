@@ -1,0 +1,4 @@
+In _variables.scss:
+$primary: #ff5722;
+$border-radius: 1rem;
+Recompile the SCSS using your build tool to apply the changes.

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <title>Event Array</title>
+ </head>
+ <body>
+    <script>
+        let events = [
+            { name: "Music Night", category: "music" },
+            { name: "Cooking Workshop", category: "cooking" }
+        ];
+        events.push({ name: "Jazz Evening", category: "music" });
+        const musicEvents = events.filter(event => event.category === "music");
+        console.log("Music Events:", musicEvents);
+        const formatted = events.map(event => `Event: ${event.name}`);
+        console.log(formatted);
+    </script>
+ </body>
+ </html>

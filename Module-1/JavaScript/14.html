@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+<html>
+ <head>
+    <title>jQuery Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ </head>
+ <body>
+    <button id="registerBtn">Register</button>
+    <div id="eventCard" style="display:none;">Event Details</div>
+    <script>
+        $("#registerBtn").click(function() {
+            alert("Registered via jQuery!");
+        });
+        $("#eventCard").fadeIn(1000).fadeOut(1000);
+    </script>
+    <!-- One benefit of frameworks like React or Vue:
+         They provide component-based architecture that makes code more reusable and easier to manage. -->
+ </body>
+ </html>

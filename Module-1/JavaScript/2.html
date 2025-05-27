@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Event Info</title>
+ </head>
+ <body>
+    <script>
+        const eventName = "Music Night";
+        const eventDate = "2025-06-01";
+        let seats = 50;
+        console.log(`Event: ${eventName}, Date: ${eventDate}, Seats Available: ${seats}`);
+        function registerUser() {
+            if (seats > 0) {
+                seats--;
+                console.log(`User registered. Remaining seats: ${seats}`);
+            } else {
+                console.log("No seats available.");
+            }
+        }
+        registerUser();
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,18 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Modern JS</title>
+ </head>
+ <body>
+    <script>
+        const event = { name: "Webinar", date: "2025-07-20", location: "Online" };
+        function showEvent({ name = "Unnamed", date = "TBD" }) {
+            console.log(`Event: ${name} on ${date}`);
+        }
+        showEvent(event);
+        const moreEvents = [{ name: "Dance" }, { name: "Yoga" }];
+        const clonedEvents = [...moreEvents];
+        console.log("Cloned Events:", clonedEvents);
+    </script>
+ </body>
+ </html>
