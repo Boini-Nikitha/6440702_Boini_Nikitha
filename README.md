@@ -36,7 +36,7 @@ This repository contains hands-on exercises across various technologies as part 
 
 1. Clone this repository to your local system:
    ```bash
-   git clone https://github.com/Boini-Nikitha-6440702/Cognizant Digital Nurture 4.0.JAVA FSE Upskilling learning program.git
+   git clone https://github.com/Boini-Nikitha/6440702_Boini_Nikitha.git
 
 Open relevant folders in your preferred IDE or code editor.
 
