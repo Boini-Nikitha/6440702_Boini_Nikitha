@@ -60,6 +60,5 @@ For questions, feedback, or collaboration, feel free to reach out via GitHub iss
 
 🔗 Connect with me on:  
 [GitHub](https://github.com/Boini-Nikitha) 
-[LinkedIn](https://www.linkedin.com/in/nikitha-boini)
 
 
